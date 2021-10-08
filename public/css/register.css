@@ -1,4 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------MAIN FORMS --------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 form {
+
     margin: 15px auto;
     width: 70%;
     display: flex;
@@ -7,37 +25,153 @@ form {
 }
 
 .form-control {
-    width: 70%;
+    font-size: 14px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
     margin-bottom: 3px;
-    padding: 10px;
+
 }
 
 .form-control label {
-    width: 70%;
+    
+    font-family: 'Raleway', sans-serif;
+    
+    padding-bottom: 10px;
+    padding-top: 10px
 }
+
 .form-control input {
-    width: 70%;
-    transition: border 2s;
-}
-.form-control input:focus {
-    border: aqua 5px solid;
+
+    height: 30px;
     outline: none;
+    text-indent: 10px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: start;
+ 
+
 }
-.form-control input:hover {
-    border: blue 2x solid;
+
+.perfil-opciones {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.form-control-categorias {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 30px
+
+    
+}
+
+.form-control-categorias label,
+.form-control-categorias input {
+    
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-control-categorias .electro-box,
+.form-control-categorias .moda-box,
+.form-control-categorias .healthy-box,
+.form-control-categorias .toy-box,
+.form-control-categorias .home-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%
+}
+
+.form-control-avatar {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+.form-control-avatar label {   
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.form-control-avatar input {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+.buttons-box {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
 }
 
 .enviar {
-    background-color: grey;
-    border-radius: 5px;
-    padding: 5px;
-}
-.enviar:hover {
-    background-color: green;
-    color: indigo;
+    outline: none;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background-color: none
 }
 
 .borrar {
-    background-color: red;
+    outline: none;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background-color: none
+}
+
+.enviar:hover,
+.borrar:hover {
+    color: white;
+    background-color: #0022AA;
+    border-color: #0022AA;
+}
+
+
+footer{
+    background-color: white;
+    padding-top: 15px;
+    height: 20vh
+}
+
+#copyright{
+    position: absolute;
 }

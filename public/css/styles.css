@@ -15,19 +15,43 @@ h3{
 p{
     font-size: 12px;
 }
-div.top-header{
+
+.contenedorHeader01{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
 }
 
-header{
+/* HEADER */
+
+header {
+
+    margin: auto;
+    padding: 0px 0px 10px 0px;
+    max-height:350px;
     background-color: #EAC926;
+    color: #03264C;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    position: relative;
+    
+
 }
 
-header .logo{
-    width: 50%;
+.logo{
+    width: 100%;
     padding: 10px;
+
+}
+
+.contenedorHeader01 {
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px
 
 }
 
@@ -41,25 +65,50 @@ header ul li a{
     color: #000;
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
 
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-header div.top-header p{
+header i {
+    size: 2em;
     text-align: center;
+}
+
+header h3 {
+
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
     margin-top: 10px;
 }
+
+.buscador {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    min-width: 25%;
+    max-width: 300px;
+    height: 30px;
+    border: 2px solid #666;
+    color: #666;
+
+}
+
+.barra-busqueda {
+
+    background: none;
+    font-size: 15px;
+    padding: 0px 0px 0px 5px;
+    display: flex;
+    border: none;
+    outline: none
+    
+}
+
 
 div.burger-menu{
     text-align: center;
@@ -73,6 +122,8 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
 }
+
+/* FIN HEADER */
 
 .price{
     font-size: 18px;
@@ -140,6 +191,7 @@ article div.main-article {
     border-top: 1px solid #ebebeb;
     padding: 5px;
     position: relative;
+    display: none;
 }
 .box-price {
     display: flex;
@@ -171,8 +223,13 @@ footer{
     margin: 10px;
 }
 
+
+.fa-gift:hover, .fa-user-shield:hover, .fa-credit-card:hover{
+    color: #EAC926;
+}
+
 #copyright{
-    padding-top: 10px;
+    padding-top: 150px;
     text-align: left;
     font-size: 10px;
 }
@@ -184,16 +241,22 @@ footer{
         justify-content: space-between;
     }
 
+
+    .logo{
+        width: 30%;
+    }
+
+    
     div.burger-menu i{
         display: none;
     }
 
-    .top-header{
+    .contenedorHeader01{
         display: flex;
         align-items: center;
     } 
 
-    div.top-header{
+    .contenedorHeader01{
         padding: 10px;
         display: flex;
         align-self: center;
@@ -209,16 +272,7 @@ footer{
         margin: 0 10px 0 20px; 
     }
 
-    .form{
-        display: flex;
-        width: auto;
-        align-items: center;
-    }
-    .fa-hand-holding-usd{
-        width: 10%;
-
-    }
-       
+      
     .products {
         display: flex;
         flex-wrap: wrap;
@@ -240,7 +294,6 @@ footer{
     footer{
         display: flex;
         background-color: white;
-        padding-top: 5%;
 
     }
 
@@ -272,6 +325,3 @@ footer{
     border: none;
     outline: none;
 }
-
-
-
